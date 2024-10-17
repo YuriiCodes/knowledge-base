@@ -1,21 +1,32 @@
 % Taxonomic relationships is_a (instrument categories)
-is_a(violin, string_instrument).
-is_a(guitar, string_instrument).
-is_a(piano, string_instrument).
-is_a(trumpet, brass_instrument).
-is_a(trombone, brass_instrument).
-is_a(flute, woodwind_instrument).
-is_a(clarinet, woodwind_instrument).
-is_a(drum, percussion_instrument).
-is_a(xylophone, percussion_instrument).
-is_a(marimba, percussion_instrument).
-is_a(bass_guitar, string_instrument).
-is_a(cello, string_instrument).
-is_a(saxophone, woodwind_instrument).
+is_a(violin, bowed_string_instrument).
+is_a(cello, bowed_string_instrument).
+is_a(guitar, plucked_string_instrument).
+is_a(bass_guitar, plucked_string_instrument).
+is_a(bowed_string_instrument, string_instrument).
+is_a(plucked_string_instrument, string_instrument).
 is_a(string_instrument, musical_instrument).
+
+is_a(trumpet, valved_brass_instrument).
+is_a(trombone, slide_brass_instrument).
+is_a(valved_brass_instrument, brass_instrument).
+is_a(slide_brass_instrument, brass_instrument).
 is_a(brass_instrument, musical_instrument).
+
+is_a(clarinet, single_reed_instrument).
+is_a(saxophone, single_reed_instrument).
+is_a(flute, no_reed_instrument).
+is_a(single_reed_instrument, woodwind_instrument).
+is_a(no_reed_instrument, woodwind_instrument).
 is_a(woodwind_instrument, musical_instrument).
+
+is_a(xylophone, tuned_percussion_instrument).
+is_a(marimba, tuned_percussion_instrument).
+is_a(drum, untuned_percussion_instrument).
+is_a(tuned_percussion_instrument, percussion_instrument).
+is_a(untuned_percussion_instrument, percussion_instrument).
 is_a(percussion_instrument, musical_instrument).
+
 is_a(musical_instrument, sound_producing_device).
 
 % Part-whole relationships part_of (instrument parts)

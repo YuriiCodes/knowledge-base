@@ -45,13 +45,32 @@
 
    Example tree:
    ```
-   animal
-   ├── mammal
-   │   ├── cat
-   │   └── dog
-   └── bird
-       ├── eagle
-       └── sparrow
+     musical_instrument
+   ├── string_instrument
+   │   ├── plucked_string_instrument
+   │   │   ├── guitar
+   │   │   └── bass_guitar
+   │   └── bowed_string_instrument
+   │       ├── violin
+   │       └── cello
+   ├── brass_instrument
+   │   ├── valved_brass_instrument
+   │   │   └── trumpet
+   │   └── slide_brass_instrument
+   │       └── trombone
+   ├─ woodwind_instrument
+   │   ├── single_reed_instrument
+   │   │   ├── clarinet
+   │   │   └── saxophone
+   │   └── no_reed_instrument
+   │       └── flute
+   └── percussion_instrument
+       ├── tuned_percussion_instrument
+       │   ├── xylophone
+       │   └── marimba
+       └── untuned_percussion_instrument
+           └── drum
+
    ```
    - Branching Factor: The node "animal" has 2 sub-nodes (mammal, bird).
    - Height: 3 levels (animal → mammal → cat).
